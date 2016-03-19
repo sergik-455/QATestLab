@@ -5,33 +5,32 @@ public class Fabrica_workers
 {
 	public List<Worker> create_list_workers(int number_workers)
 	{
-		ArrayList<Worker> list_workers = new ArrayList<Worker>();// лист сотрудников
-		
-		// создаем обязательных сотрудников (Директор, Менеджер и Бухгалтер)
+		ArrayList<Worker> list_workers = new ArrayList<Worker>();
+
+		// create the required staff (Manager, Director and Accountant)
 		Worker director = new Director();
 		Worker main_manager = new Manager();
 		Worker main_accountant = new Accountant();
 
-		// добавляем обязательных сотрудников
+		// add to list
 		list_workers.add(director);	
-		
+
 		list_workers.add(main_accountant);
-		main_accountant.name = "Main_accountant"; // добавляем имя
-		main_accountant.fixed_salary = 400;// добавляем фиксированую зарплату
-		
+		main_accountant.name = "Main_accountant";
+		main_accountant.fixed_salary = 400;// fixed salary
+
 		list_workers.add(main_manager);
-		main_manager.name = "Main_manager"; // добавляем имя
-		main_manager.fixed_salary = 400;// добавляем фиксированую зарплату
-		
+		main_manager.name = "Main_manager";
+		main_manager.fixed_salary = 400;// fixed salary
+
 		for (int i = 3; i < number_workers; i++)
 		{
 			Random_number my_random = new Random_number();
-			
-			//Генерим случайное целое число от 0 до 4 и в зависимости от числа сотруднику назначаем профессию
+
 			switch(my_random.random(0, 4))
 			{
 			case 0: list_workers.add(new Programmer());
-			list_workers.get(i).name = "Worker " + i;// указываем имя в виде числа
+			list_workers.get(i).name = "Worker " + i;
 			break;
 			case 1: list_workers.add(new Tester());
 			list_workers.get(i).name = "Worker " + i;
@@ -47,8 +46,6 @@ public class Fabrica_workers
 			break;
 			}		
 		}	
-
 		return list_workers;
 	}
-	
 }

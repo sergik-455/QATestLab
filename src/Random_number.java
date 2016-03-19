@@ -1,6 +1,6 @@
 public class Random_number 
 {
-	//Генерим случайное целое число от number_min до number_max
+	//Generate number in the range(number_min, number_max)
 	int random(int number_min,int number_max)
 	{
 		// Min + (int)(Math.random() * ((Max - Min) + 1))

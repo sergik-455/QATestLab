@@ -14,20 +14,19 @@ public class Director extends Worker
 	// генерируем задания
 	public List<Worker> create_new_task()
 	{
-		// генерируем кол-во заданий на 1 час (от 20 до 40)
+		// Create tasks per 1 hours (min 20, max 40)
 		int number_tasks = 0;
-		Random_number rn = new Random_number();
-		//number_tasks = rn.random(8, 10);	
+		Random_number rn = new Random_number();	
 		number_tasks = rn.random(50, 100);
 
-		//генерируем типы заданий		
+		//Generate type of tasks	
 		List<Worker> list_tasks = new ArrayList<Worker>();
 		Fabrica_tasks ft = new Fabrica_tasks();
 		list_tasks = ft.create_list_workers(number_tasks);
-		return list_tasks;//возвращаем коллекию с заданиями 
+		return list_tasks;
 	}
 
-	// зарплата фиксированая
+	// fixed salary
 	int worker_salary()
 	{
 		return worked_hours * salary_for_hour;
