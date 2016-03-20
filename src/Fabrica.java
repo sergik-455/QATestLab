@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Fabrica
 {
+	@SuppressWarnings("static-access")
 	public List<Worker> create_list_workers(int number_workers)
 	{
 		ArrayList<Worker> list_workers = new ArrayList<Worker>();
@@ -25,9 +26,10 @@ public class Fabrica
 
 		for (int i = 3; i < number_workers; i++)
 		{
-			Random_number my_random = new Random_number();
+			//Get the only object available
+			Random_number object = Random_number.getInstance(0, 4);
 
-			switch(my_random.random(0, 4))
+			switch(object.number)
 			{
 			case 0: list_workers.add(new Programmer());
 			list_workers.get(i).name = "Worker " + i;
@@ -50,14 +52,15 @@ public class Fabrica
 	}
 	
 	
+	@SuppressWarnings("static-access")
 	public List<Worker> create_list_tasks(int number_workers)
 	{
 		ArrayList<Worker> list_workers = new ArrayList<Worker>();
 		
 		for (int i = 0; i < number_workers; i++)
 		{
-			Random_number my_random = new Random_number();
-			switch(my_random.random(0, 4))
+			Random_number object = Random_number.getInstance(0, 4);
+			switch(object.number)
 			{
 			case 0: list_workers.add(new Programmer());
 			list_workers.get(i).name = "Worker " + i;

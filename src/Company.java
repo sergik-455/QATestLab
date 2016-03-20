@@ -9,11 +9,14 @@ public class Company
 	private int counter_freelancers = 0;
 
 	//Generate number workers in company (min 10, max 100)
+	@SuppressWarnings("static-access")
 	public int generate_number_workers(int number_1, int number_2)
 	{		
 		int result = 0;
-		Random_number random = new Random_number();
-		result = random.random(number_1, number_2);	
+		//Get the only object available
+		Random_number object = Random_number.getInstance(number_1, number_2);
+		result = object.number;
+
 		return result;
 	}
 
@@ -43,15 +46,14 @@ public class Company
 			{
 				company_list_workers.get(j).hours_week = 40;
 			}
-			
-			//tasks_per_hour = list_tasks.size();
+
 			// Cycle for 40 hours (one week)
 			for (int j = 1; j <= 40; j++) 
 			{
 				// Director creates new task
 				list_tasks = director.create_new_task();
 				tasks_per_hour = list_tasks.size();
-				
+
 				System.out.println("---Director creates new task per_hour---");	
 
 				//Take task and give out to employees
@@ -77,30 +79,30 @@ public class Company
 						}	
 					}							
 				}					
-				
+
 			}	
 			//create freelancers and give work
 			if(tasks_per_hour > 0)
-				{				
-					List<Worker> list_freelancers_company = new ArrayList<Worker>();
+			{				
+				List<Worker> list_freelancers_company = new ArrayList<Worker>();
 
-					int number_freelancers = 3;
-					counter_freelancers += number_freelancers;
-					//create freelancers
-					Fabrica fab_freelancers = new Fabrica();
-					list_freelancers_company = fab_freelancers.create_list_freelancers(number_freelancers);
-					company_list_workers.addAll(list_freelancers_company);
-					for (int j = 0, t = 0; j <  tasks_per_hour; j++, t++) 
+				int number_freelancers = 3;
+				counter_freelancers += number_freelancers;
+				//create freelancers
+				Fabrica fab_freelancers = new Fabrica();
+				list_freelancers_company = fab_freelancers.create_list_freelancers(number_freelancers);
+				company_list_workers.addAll(list_freelancers_company);
+				for (int j = 0, t = 0; j <  tasks_per_hour; j++, t++) 
+				{
+					if(t == list_freelancers_company.size())
 					{
-						if(t == list_freelancers_company.size())
-						{
-							t = 0;
-						}
-						list_freelancers_company.get(t).working();
-						//++counter_freelancers;
-					}	
-				}	// end freelancers
-				
+						t = 0;
+					}
+					list_freelancers_company.get(t).working();
+
+				}	
+			}	// end freelancers
+
 			Accountant ac = new Accountant();
 			System.out.println(ac.create_week_report(company_list_workers));
 			System.out.println("________________________________________________________________");
@@ -119,6 +121,7 @@ public class Company
 		report += "Quantity of freelancers in the company: " + counter_freelancers + "\n";
 		report += "Number of the completed tasks " + total_tasks + "\n";
 
+		// write report in file
 		FileWriter writer = null;
 		try
 		{

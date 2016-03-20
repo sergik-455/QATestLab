@@ -1,70 +1,42 @@
 1) worked_hours = 160 / Name: Main Boss / Profesion: Director / Salary per hour = 5 / worker_salary = 800
-2) worked_hours = 65 / Name: Main_accountant / Profesion: Accountant / Salary per hour = 4 / worker_salary = 660
-3) worked_hours = 61 / Name: Main_manager / Profesion: Manager / Salary per hour = 4 / worker_salary = 644
-4) worked_hours = 50 / Name: Worker 3 / Profesion: Programer / Salary per hour = 4 / worker_salary = 200
-5) worked_hours = 55 / Name: Worker 4 / Profesion: Manager / Salary per hour = 4 / worker_salary = 220
-6) worked_hours = 48 / Name: Worker 5 / Profesion: Programer / Salary per hour = 4 / worker_salary = 192
-7) worked_hours = 64 / Name: Worker 6 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 256
-8) worked_hours = 57 / Name: Worker 7 / Profesion: Programer / Salary per hour = 4 / worker_salary = 228
-9) worked_hours = 60 / Name: Worker 8 / Profesion: Designer / Salary per hour = 3 / worker_salary = 180
-10) worked_hours = 66 / Name: Worker 9 / Profesion: Manager / Salary per hour = 4 / worker_salary = 264
-11) worked_hours = 59 / Name: Worker 10 / Profesion: Manager / Salary per hour = 4 / worker_salary = 236
-12) worked_hours = 53 / Name: Worker 11 / Profesion: Manager / Salary per hour = 4 / worker_salary = 212
-13) worked_hours = 53 / Name: Worker 12 / Profesion: Programer / Salary per hour = 4 / worker_salary = 212
-14) worked_hours = 65 / Name: Worker 13 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 260
-15) worked_hours = 67 / Name: Worker 14 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 268
-16) worked_hours = 45 / Name: Worker 15 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 180
-17) worked_hours = 54 / Name: Worker 16 / Profesion: Manager / Salary per hour = 4 / worker_salary = 216
-18) worked_hours = 53 / Name: Worker 17 / Profesion: Tester / Salary per hour = 3 / worker_salary = 159
-19) worked_hours = 67 / Name: Worker 18 / Profesion: Designer / Salary per hour = 3 / worker_salary = 201
-20) worked_hours = 58 / Name: Worker 19 / Profesion: Designer / Salary per hour = 3 / worker_salary = 174
-21) worked_hours = 49 / Name: Worker 20 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 196
-22) worked_hours = 56 / Name: Worker 21 / Profesion: Tester / Salary per hour = 3 / worker_salary = 168
-23) worked_hours = 52 / Name: Worker 22 / Profesion: Programer / Salary per hour = 4 / worker_salary = 208
-24) worked_hours = 56 / Name: Worker 23 / Profesion: Programer / Salary per hour = 4 / worker_salary = 224
-25) worked_hours = 57 / Name: Worker 24 / Profesion: Manager / Salary per hour = 4 / worker_salary = 228
-26) worked_hours = 69 / Name: Worker 25 / Profesion: Programer / Salary per hour = 4 / worker_salary = 276
-27) worked_hours = 42 / Name: Worker 26 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 168
-28) worked_hours = 45 / Name: Worker 27 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 180
-29) worked_hours = 43 / Name: Worker 28 / Profesion: Manager / Salary per hour = 4 / worker_salary = 172
-30) worked_hours = 34 / Name: Worker 29 / Profesion: Designer / Salary per hour = 3 / worker_salary = 102
-31) worked_hours = 45 / Name: Worker 30 / Profesion: Manager / Salary per hour = 4 / worker_salary = 180
-32) worked_hours = 42 / Name: Worker 31 / Profesion: Programer / Salary per hour = 4 / worker_salary = 168
-33) worked_hours = 44 / Name: Worker 32 / Profesion: Manager / Salary per hour = 4 / worker_salary = 176
-34) worked_hours = 49 / Name: Worker 33 / Profesion: Programer / Salary per hour = 4 / worker_salary = 196
-35) worked_hours = 44 / Name: Worker 34 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 176
-36) worked_hours = 40 / Name: Worker 35 / Profesion: Programer / Salary per hour = 4 / worker_salary = 160
-37) worked_hours = 47 / Name: Worker 36 / Profesion: Tester / Salary per hour = 3 / worker_salary = 141
-38) worked_hours = 46 / Name: Worker 37 / Profesion: Tester / Salary per hour = 3 / worker_salary = 138
-39) worked_hours = 59 / Name: Worker 38 / Profesion: Tester / Salary per hour = 3 / worker_salary = 177
-40) worked_hours = 53 / Name: Worker 39 / Profesion: Designer / Salary per hour = 3 / worker_salary = 159
-41) worked_hours = 44 / Name: Worker 40 / Profesion: Programer / Salary per hour = 4 / worker_salary = 176
-42) worked_hours = 41 / Name: Worker 41 / Profesion: Tester / Salary per hour = 3 / worker_salary = 123
-43) worked_hours = 40 / Name: Worker 42 / Profesion: Designer / Salary per hour = 3 / worker_salary = 120
-44) worked_hours = 37 / Name: Worker 43 / Profesion: Designer / Salary per hour = 3 / worker_salary = 111
-45) worked_hours = 46 / Name: Worker 44 / Profesion: Designer / Salary per hour = 3 / worker_salary = 138
-46) worked_hours = 31 / Name: Worker 45 / Profesion: Tester / Salary per hour = 3 / worker_salary = 93
-47) worked_hours = 44 / Name: Worker 46 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 176
-48) worked_hours = 42 / Name: Worker 47 / Profesion: Designer / Salary per hour = 3 / worker_salary = 126
-49) worked_hours = 43 / Name: Worker 48 / Profesion: Manager / Salary per hour = 4 / worker_salary = 172
-50) worked_hours = 36 / Name: Worker 49 / Profesion: Tester / Salary per hour = 3 / worker_salary = 108
-51) worked_hours = 29 / Name: Worker 50 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 116
-52) worked_hours = 45 / Name: Worker 51 / Profesion: Manager / Salary per hour = 4 / worker_salary = 180
-53) worked_hours = 26 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 78
-54) worked_hours = 26 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 78
-55) worked_hours = 26 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 78
-56) worked_hours = 28 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 84
-57) worked_hours = 28 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 84
-58) worked_hours = 28 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 84
-59) worked_hours = 17 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 51
-60) worked_hours = 17 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 51
-61) worked_hours = 16 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 48
-62) worked_hours = 28 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 84
-63) worked_hours = 28 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 84
-64) worked_hours = 27 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 81
-salary_all_workers: 11879
-total_hours_all_workers: 3005
-Amount of workers and freelancers: 64
+2) worked_hours = 106 / Name: Main_accountant / Profesion: Accountant / Salary per hour = 4 / worker_salary = 824
+3) worked_hours = 102 / Name: Main_manager / Profesion: Manager / Salary per hour = 4 / worker_salary = 808
+4) worked_hours = 73 / Name: Worker 3 / Profesion: Manager / Salary per hour = 4 / worker_salary = 292
+5) worked_hours = 111 / Name: Worker 4 / Profesion: Programer / Salary per hour = 4 / worker_salary = 444
+6) worked_hours = 88 / Name: Worker 5 / Profesion: Manager / Salary per hour = 4 / worker_salary = 352
+7) worked_hours = 89 / Name: Worker 6 / Profesion: Designer / Salary per hour = 3 / worker_salary = 267
+8) worked_hours = 88 / Name: Worker 7 / Profesion: Tester / Salary per hour = 3 / worker_salary = 264
+9) worked_hours = 84 / Name: Worker 8 / Profesion: Programer / Salary per hour = 4 / worker_salary = 336
+10) worked_hours = 87 / Name: Worker 9 / Profesion: Tester / Salary per hour = 3 / worker_salary = 261
+11) worked_hours = 84 / Name: Worker 10 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 336
+12) worked_hours = 84 / Name: Worker 11 / Profesion: Designer / Salary per hour = 3 / worker_salary = 252
+13) worked_hours = 81 / Name: Worker 12 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 324
+14) worked_hours = 77 / Name: Worker 13 / Profesion: Designer / Salary per hour = 3 / worker_salary = 231
+15) worked_hours = 94 / Name: Worker 14 / Profesion: Manager / Salary per hour = 4 / worker_salary = 376
+16) worked_hours = 91 / Name: Worker 15 / Profesion: Tester / Salary per hour = 3 / worker_salary = 273
+17) worked_hours = 75 / Name: Worker 16 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 300
+18) worked_hours = 91 / Name: Worker 17 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 364
+19) worked_hours = 96 / Name: Worker 18 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 384
+20) worked_hours = 94 / Name: Worker 19 / Profesion: Manager / Salary per hour = 4 / worker_salary = 376
+21) worked_hours = 88 / Name: Worker 20 / Profesion: Tester / Salary per hour = 3 / worker_salary = 264
+22) worked_hours = 61 / Name: Worker 21 / Profesion: Accountant / Salary per hour = 4 / worker_salary = 244
+23) worked_hours = 76 / Name: Worker 22 / Profesion: Manager / Salary per hour = 4 / worker_salary = 304
+24) worked_hours = 78 / Name: Worker 23 / Profesion: Manager / Salary per hour = 4 / worker_salary = 312
+25) worked_hours = 26 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 78
+26) worked_hours = 25 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 75
+27) worked_hours = 25 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 75
+28) worked_hours = 14 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 42
+29) worked_hours = 14 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 42
+30) worked_hours = 14 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 42
+31) worked_hours = 27 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 81
+32) worked_hours = 27 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 81
+33) worked_hours = 26 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 78
+34) worked_hours = 17 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 51
+35) worked_hours = 17 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 51
+36) worked_hours = 16 / Name: Freelancer  / Profesion: Freelancer / Salary per hour = 3 / worker_salary = 48
+salary_all_workers: 9732
+total_hours_all_workers: 2406
+Amount of workers and freelancers: 36
 Quantity of freelancers in the company: 12
-Number of the completed tasks 2550
+Number of the completed tasks 1998
 

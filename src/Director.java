@@ -12,12 +12,15 @@ public class Director extends Worker
 	}
 
 	// генерируем задания
+	@SuppressWarnings("static-access")
 	public List<Worker> create_new_task()
 	{
 		// Create tasks per 1 hours (min 20, max 40)
 		int number_tasks = 0;
-		Random_number rn = new Random_number();	
-		number_tasks = rn.random(50, 120);
+
+		//Get the only object available
+		Random_number object = Random_number.getInstance(50, 100);
+		number_tasks = object.number;
 
 		//Generate type of tasks	
 		List<Worker> list_tasks = new ArrayList<Worker>();
