@@ -8,7 +8,7 @@ public class Fabrica_freelancers
 		for (int i = 0; i < number_workers; i++)
 		{
 			list_workers.add(new Freelancer());
-			list_workers.get(i).name = "Freelancer " + i;
+			list_workers.get(i).name = "Freelancer ";
 		}		
 		return list_workers;
 	}	

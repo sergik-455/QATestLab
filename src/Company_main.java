@@ -16,7 +16,7 @@ public class Company_main
 		list_workers = my_company.create_workers(number_workers);
 		
 		//Do all the work and generate report per month
-		System.out.println("Serhii print: Do all the work and generate report per month" + "\n" 
+		System.out.println("Serhii print: Generate report per month" + "\n" 
 		+ my_company.report(my_company.do_work(list_workers)));		
 	}
 }
