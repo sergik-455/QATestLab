@@ -21,8 +21,8 @@ public class Director extends Worker
 
 		//Generate type of tasks	
 		List<Worker> list_tasks = new ArrayList<Worker>();
-		Fabrica_tasks ft = new Fabrica_tasks();
-		list_tasks = ft.create_list_workers(number_tasks);
+		Fabrica fab__tasks = new Fabrica();
+		list_tasks = fab__tasks.create_list_tasks(number_tasks);
 		return list_tasks;
 	}
 

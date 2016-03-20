@@ -21,8 +21,8 @@ public class Company
 	public List<Worker> create_workers(int number_workers)
 	{
 		List<Worker> list_workers_company = new ArrayList<Worker>();
-		Fabrica_workers fw = new Fabrica_workers();
-		list_workers_company = fw.create_list_workers(number_workers);
+		Fabrica fab_workers = new Fabrica();
+		list_workers_company = fab_workers.create_list_workers(number_workers);
 
 		return list_workers_company;
 	}
@@ -87,8 +87,8 @@ public class Company
 					int number_freelancers = 3;
 					counter_freelancers += number_freelancers;
 					//create freelancers
-					Fabrica_freelancers ff = new Fabrica_freelancers();
-					list_freelancers_company = ff.create_list_workers(number_freelancers);
+					Fabrica fab_freelancers = new Fabrica();
+					list_freelancers_company = fab_freelancers.create_list_freelancers(number_freelancers);
 					company_list_workers.addAll(list_freelancers_company);
 					for (int j = 0, t = 0; j <  tasks_per_hour; j++, t++) 
 					{
