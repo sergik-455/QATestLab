@@ -6,6 +6,7 @@ import java.util.List;
 public class Company
 {
 	private int total_tasks = 0;
+	private int counter_freelancers = 0;
 
 	//Generate number workers in company (min 10, max 100)
 	public int generate_number_workers(int number_1, int number_2)
@@ -84,6 +85,7 @@ public class Company
 					List<Worker> list_freelancers_company = new ArrayList<Worker>();
 
 					int number_freelancers = 3;
+					counter_freelancers += number_freelancers;
 					//create freelancers
 					Fabrica_freelancers ff = new Fabrica_freelancers();
 					list_freelancers_company = ff.create_list_workers(number_freelancers);
@@ -95,6 +97,7 @@ public class Company
 							t = 0;
 						}
 						list_freelancers_company.get(t).working();
+						//++counter_freelancers;
 					}	
 				}	// end freelancers
 				
@@ -113,6 +116,7 @@ public class Company
 		String report = "" ;
 		Accountant accountant = new Accountant();
 		report = accountant.create_monthly_report(company_list_workers);
+		report += "Quantity of freelancers in the company: " + counter_freelancers + "\n";
 		report += "Number of the completed tasks " + total_tasks + "\n";
 
 		FileWriter writer = null;

@@ -49,13 +49,11 @@ public class Accountant extends Worker
 			result += i + ") " + "worked_hours = " + item.worked_hours + " / " + "Name: " + item.name + " / " + "Profesion: " + item.profesion + " / " + "Salary per hour = " + item.salary_for_hour + " / " + "worker_salary = " + item.worker_salary() +"\n";
 			salary_all_workers += item.worker_salary();
 			total_hours_all_workers += item.worked_hours;
-		}	
-		result += "Quantity of working in the company: " + company_list_workers.size() + "\n";
-		result += "Quantity of freelancers in the company: 0" + "\n";// Serhii!
-		result += "Amount of workers and freelancers: " + company_list_workers.size() + "\n";		
+		}			
 
 		result += "salary_all_workers: " + salary_all_workers + "\n";
 		result += "total_hours_all_workers: " + total_hours_all_workers + "\n";
+		result += "Amount of workers and freelancers: " + company_list_workers.size() + "\n";
 		return result;
 	}
 }
