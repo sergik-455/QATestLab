@@ -17,7 +17,7 @@ public class Director extends Worker
 		// Create tasks per 1 hours (min 20, max 40)
 		int number_tasks = 0;
 		Random_number rn = new Random_number();	
-		number_tasks = rn.random(50, 100);
+		number_tasks = rn.random(90, 130);
 
 		//Generate type of tasks	
 		List<Worker> list_tasks = new ArrayList<Worker>();

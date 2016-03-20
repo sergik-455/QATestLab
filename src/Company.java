@@ -26,7 +26,7 @@ public class Company
 		return list_workers_company;
 	}
 
-	// the company performs all the work
+	// The company performs all the work
 	public List<Worker> do_work(List<Worker> company_list_workers)
 	{
 		List<Worker> list_tasks = new ArrayList<Worker>();
@@ -42,16 +42,19 @@ public class Company
 			{
 				company_list_workers.get(j).hours_week = 40;
 			}
+			
+			tasks_per_hour = list_tasks.size();
 			// Cycle for 40 hours (one week)
 			for (int j = 1; j <= 40; j++) 
 			{
 				// Director creates new task
 				list_tasks = director.create_new_task();
-				tasks_per_hour = list_tasks.size();
+				//tasks_per_hour = list_tasks.size();
+				System.out.println("---------------------------before-------------------tasks_per_hour" + tasks_per_hour);
 				counter_tasks += list_tasks.size();
 
 				//Take task and give out to employees
-				for (int t = 0,clw = 0, counter = 0; t < tasks_per_hour; t++,clw++, counter ++)
+				for (int t = 0,clw = 0, counter = 0; t < list_tasks.size(); t++,clw++, counter ++)// Serhii!
 				{
 					//looking a free employee 
 					if(list_tasks.get(t).available())
@@ -65,11 +68,41 @@ public class Company
 						if(company_list_workers.get(clw).getClass().equals(list_tasks.get(t).getClass()))
 						{
 							company_list_workers.get(clw).working();
+							--tasks_per_hour;// Serhii!
 						}	
 					}
-				}
-
+					
+				}		
 			}
+			
+			
+			
+			System.out.println("----------------------------------------------tasks_per_hour" + tasks_per_hour);
+			//если нехватает работников то генерим фрилансеров и отдаем им работу
+			if(tasks_per_hour > 0)
+				{
+				
+					List<Worker> list_freelancers_company = new ArrayList<Worker>();
+					//считаем кол-во оставшихся заданий и относительного этого формируем кол-во фрилансеров
+					// если фрилансеров нет то создаем их
+					int number_freelancers = 3;
+
+					Fabrica_freelancers ff = new Fabrica_freelancers();
+					list_freelancers_company = ff.create_list_workers(number_freelancers);
+					company_list_workers.addAll(list_freelancers_company);
+					for (int j = 0, t = 0; j <  tasks_per_hour; j++, t++) 
+					{
+						if(t == list_freelancers_company.size())
+						{
+							t = 0;
+						}
+						list_freelancers_company.get(t).working();
+					}
+		
+				}	
+			
+			
+			
 			Accountant ac = new Accountant();
 			System.out.println(ac.create_week_report(company_list_workers));
 			System.out.println("________________________________________________________________");

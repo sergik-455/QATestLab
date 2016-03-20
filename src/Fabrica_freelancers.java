@@ -7,7 +7,7 @@ public class Fabrica_freelancers
 		ArrayList<Worker> list_workers = new ArrayList<Worker>();		
 		for (int i = 0; i < number_workers; i++)
 		{
-			list_workers.add(new Programmer());
+			list_workers.add(new Freelancer());
 			list_workers.get(i).name = "Freelancer " + i;
 		}		
 		return list_workers;
