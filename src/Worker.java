@@ -8,6 +8,7 @@ abstract class Worker
 	int salary_for_hour;
 	int worked_hours;
 	int fixed_salary;
+	boolean available;
 
 	Worker() 
 	{
@@ -17,6 +18,7 @@ abstract class Worker
 		worked_hours = 0;
 		hours_week = 40;
 		fixed_salary = 0;
+		available = true;
 	}
 	int working_hours()
 	{
@@ -31,7 +33,8 @@ abstract class Worker
 	boolean available()
 	{
 		boolean result = true;
-		if (0 == hours_week) {
+		if (0 == hours_week || available == false) 
+		{
 			result = false;
 		}
 		return result;

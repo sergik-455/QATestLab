@@ -43,15 +43,17 @@ public class Company
 				company_list_workers.get(j).hours_week = 40;
 			}
 			
-			tasks_per_hour = list_tasks.size();
+			//tasks_per_hour = list_tasks.size();
 			// Cycle for 40 hours (one week)
 			for (int j = 1; j <= 40; j++) 
 			{
 				// Director creates new task
 				list_tasks = director.create_new_task();
-				//tasks_per_hour = list_tasks.size();
-				System.out.println("---------------------------before-------------------tasks_per_hour" + tasks_per_hour);
+				tasks_per_hour = list_tasks.size();
+				
 				counter_tasks += list_tasks.size();
+				System.out.println("---Director creates new task per_hour---" + tasks_per_hour);
+				System.out.println("list_tasks.size() " + list_tasks.size());
 
 				//Take task and give out to employees
 				for (int t = 0,clw = 0, counter = 0; t < list_tasks.size(); t++,clw++, counter ++)// Serhii!
@@ -65,41 +67,66 @@ public class Company
 							clw = 0;
 							counter = 0;
 						}
+						//compare lists
 						if(company_list_workers.get(clw).getClass().equals(list_tasks.get(t).getClass()))
 						{
 							company_list_workers.get(clw).working();
 							--tasks_per_hour;// Serhii!
+							//делаем сотрудника недоступным, он выполняет задание
+							company_list_workers.get(clw).available = false;
 						}	
-					}
+					}		
 					
-				}		
+				}	
+				
+//				System.out.println("---Не отработанные задания---" + tasks_per_hour);
+//				// если остались неотработанніе задания
+//				// то создаем столько же фрилансеров сколько заданий и отдаем им все задания
+//				if(tasks_per_hour > 0)
+//				{
+//					List<Worker> list_freelancers_company = new ArrayList<Worker>();
+//					Fabrica_freelancers ff = new Fabrica_freelancers();
+//					list_freelancers_company = ff.create_list_workers(tasks_per_hour);
+//					
+//					//фрилансері работают
+//					for (int k = 0; k < list_freelancers_company.size(); k++) 
+//					{
+//						//list_freelancers_company.get(k).working();
+//						--tasks_per_hour;
+//					}
+//					
+//					// добавлям фрилансеров в наш список
+//					//company_list_workers.addAll(list_freelancers_company);
+//				}	
+				
+				
 			}
 			
 			
 			
-			System.out.println("----------------------------------------------tasks_per_hour" + tasks_per_hour);
-			//если нехватает работников то генерим фрилансеров и отдаем им работу
-			if(tasks_per_hour > 0)
-				{
-				
-					List<Worker> list_freelancers_company = new ArrayList<Worker>();
-					//считаем кол-во оставшихся заданий и относительного этого формируем кол-во фрилансеров
-					// если фрилансеров нет то создаем их
-					int number_freelancers = 3;
-
-					Fabrica_freelancers ff = new Fabrica_freelancers();
-					list_freelancers_company = ff.create_list_workers(number_freelancers);
-					company_list_workers.addAll(list_freelancers_company);
-					for (int j = 0, t = 0; j <  tasks_per_hour; j++, t++) 
-					{
-						if(t == list_freelancers_company.size())
-						{
-							t = 0;
-						}
-						list_freelancers_company.get(t).working();
-					}
-		
-				}	
+//			System.out.println("----------------------------------------------tasks_per_hour" + tasks_per_hour);
+//			//если нехватает работников то генерим фрилансеров и отдаем им работу
+//			if(tasks_per_hour > 0)
+//				{
+//				
+//					List<Worker> list_freelancers_company = new ArrayList<Worker>();
+//					//считаем кол-во оставшихся заданий и относительного этого формируем кол-во фрилансеров
+//					// если фрилансеров нет то создаем их
+//					int number_freelancers = 3;
+//
+//					Fabrica_freelancers ff = new Fabrica_freelancers();
+//					list_freelancers_company = ff.create_list_workers(number_freelancers);
+//					company_list_workers.addAll(list_freelancers_company);
+//					for (int j = 0, t = 0; j <  tasks_per_hour; j++, t++) 
+//					{
+//						if(t == list_freelancers_company.size())
+//						{
+//							t = 0;
+//						}
+//						list_freelancers_company.get(t).working();
+//					}
+//		
+//				}	
 			
 			
 			
