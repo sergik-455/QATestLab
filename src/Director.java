@@ -11,7 +11,7 @@ public class Director extends Worker
 		name = "Main Boss";
 	}
 
-	// генерируем задания
+	// create new task
 	@SuppressWarnings("static-access")
 	public List<Worker> create_new_task()
 	{
